@@ -1,0 +1,1117 @@
+*{
+    margin:0 ;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    margin: 0 auto;
+    overflow-x:hidden;
+}
+
+
+body{
+    height: 100%;
+    margin: 0 auto;
+    overflow-x:hidden;
+    text-shadow: 2px 2px 2px black;
+
+}
+/*fonte = font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Salsa', cursive; */
+
+
+:root {
+    --main-color: #2b9eb3;
+    --white-color:white;
+    --black-color:rgba(0, 0, 0, 0.671);
+}
+
+.menu{
+    background:rgba(0, 0, 0, 0.164);
+    display:flex;
+    position:fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.cadastro-geral{
+    display:none;
+    text-align: center;
+    color:var(--white-color);
+    word-spacing: 5px; /*espaçamento por palavras */
+    letter-spacing: 0.5px; /*espaçamento por letras*/
+}
+
+.cadastro-div{
+    padding-top: 10%;
+    padding-bottom: 10%;    
+}
+
+.cadastro-geral button{
+    background:rgba(0, 0, 0, 0.116);
+    width:320px;
+    height:50px;
+    border-radius: 5px;
+    border: 1px solid var(--white-color);
+    color:var(--white-color);
+    cursor:pointer;
+}
+
+.cadastro-{
+    padding-top: 5%;
+    margin:auto;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+  
+}
+
+.cadastro-P{
+    padding-top: 5%;
+    margin:auto;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+input{
+    width: 20rem;
+    height: 2rem;
+    background: transparent;
+    border:none;
+    border-bottom: 2px solid whitesmoke;
+    color:var(--white-color);
+}
+
+input::placeholder{
+    color:var(--white-color);
+}
+
+input:hover{
+    box-shadow: inset 10px 10px 50px black; 
+}
+
+.logo{
+    color:var(--white-color);
+    font-size: 40px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 2%;
+
+}
+
+.login{
+    padding: 1%;
+    margin-left: 68%;
+    display: flex;
+    justify-content: space-around;
+    gap:5%;
+}
+
+.login button{
+    width: 5rem;
+    height: 2rem;
+}
+
+#carrinho{
+    width: 2rem;
+}
+
+
+button:hover{
+    box-shadow:  5px 5px 30px black;
+    background:var(--black-color);
+    color: var(--white-color);
+}
+
+
+p{
+    color:var(--white-color);
+    text-align:center;
+}
+
+#Page-01{
+    padding-top: 4%;
+
+}
+
+.content{
+    background:var(--black-color);
+    min-height: 100vh;  /*tamanho*/
+    min-width: 200vh;
+    box-shadow: inset 10px 10px 50px black; /*inset = seja gerada no interior do elemento em vez de fora dele.*/ 
+}
+
+.content-P{
+    margin:auto;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.content-G{
+    margin:auto;
+    border-radius: 10px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 2%;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 18rem;
+    height:28rem;    
+    gap:3rem;
+}
+
+
+
+.grid-img img{
+    width: 17rem;
+    height:25rem;
+    border-radius: 12px; 
+    box-shadow: 5px 5px 50px rgba(0, 0, 0, 0.671);
+    transition: all 300ms ease-in-out; 
+
+}
+
+.grid-img img:hover {
+    transform:translate(1%,1%) scale(1.1); rotate:(5deg);
+    box-shadow: 5px 5px 50px rgba(190, 176, 176, 0.705);
+
+}
+
+.content-F{
+    background:rgba(0, 0, 0, 0.164);
+    padding: 5px;
+    margin: auto;   
+}
+
+.content-F-div{
+    text-align: center;
+    justify-content: center;
+
+}
+
+.content-F-div-img-one {
+    width: 200px;
+    height: 30px;
+}
+
+.content-F-div-img-two {
+    width:50px;
+   
+}
+
+.content-F a{
+   text-decoration:none;  
+   color:var(--white-color);
+}
+
+.button-one{
+    background:rgba(0, 0, 0, 0.116);
+    width:150px;
+    height:50px;
+    border-radius: 12px;
+    border: 1px solid var(--white-color);
+    color:var(--white-color);
+    cursor:pointer;
+
+}
+
+.social{
+    width: 200px;
+    height: 30px;
+}
+
+#one-hidden, #two-hidden, #three-hidden{
+    display:none;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.copa-one, .copa-two, .copa-three{
+    text-align: center;
+}
+
+
+.copa-one img, .copa-two img, .copa-three img{
+    max-width: 100%;
+    width: 90rem;
+    box-shadow: 5px 5px 50px black;
+}
+
+.mineirao img, .estacao img, .ouro img{
+    max-width: 100%;
+    width: 50rem;
+    box-shadow: 5px 5px 50px black;
+}
+
+.content-V-one {
+    width:50rem;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;    
+    column-gap: 5%;
+    border:none;
+    margin: 0 auto;
+}
+
+.ticket-one{
+    background:rgba(0, 0, 0, 0.164);
+    border-radius: 2%;
+    font-size: 20px;
+    box-shadow: 5px 5px 25px red;
+}
+
+
+.ticket-one h3{
+    font-size: 30px;
+}
+
+.button-sell{
+    width:100%;
+    height:5rem;
+    border: none;
+    margin-top: 10px;
+    cursor:pointer;
+}
+
+.button-cdt{
+    width:20%;
+    height:4rem;
+    border: none;
+    margin-top: 10px;
+    cursor:pointer;
+}
+
+.banda-one-video{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.banda-one-video iframe{
+    box-shadow: 5px 5px 50px black;
+    border:0px;
+}
+
+#res-hidden, #res-hidden-two, #res-hidden-three{
+    display:none;
+    color: var(--white-color);
+    text-align: center;
+}
+
+.div-res-one{
+    padding-bottom: 2%;
+}
+
+.div-res-one h1{
+    font-size:2rem;
+}
+.div-res-one p{
+    font-size:1.2rem;
+}
+
+#final-div{
+    display:none;
+    flex-direction: column;
+    min-height: 25rem;
+    padding-top: 10%;
+    color: var(--white-color);
+    justify-content: center;
+}
+
+.final-img {
+    padding: 2%;
+    text-align: center;
+}
+
+.final-img img{
+    width: 5rem;
+    height: 5rem;
+
+}
+
+.final-img img:hover{
+    transform:translate(1%,1%) scale(1.5); rotate:(5deg);
+
+}
+
+@media only screen and (max-width: 280px){
+    #Page-01{
+        padding-top: 25%;
+    }
+    .menu{
+        background:rgba(0, 0, 0, 0.164);
+        display: flex;
+        justify-content:center;  
+    }
+    .login{
+        margin-left: 0%;
+    }
+   
+    .logo{
+        color:var(--white-color);
+        font-size: 30px;
+    }
+
+    .content{
+        min-height: 100vh;  /*tamanho*/
+        min-width: 0vh; 
+    }
+    
+    .grid{
+        display:inline;
+        text-align: center;
+    }
+    .grid-img img{
+        width: 10rem;
+        height:15rem;
+        border-radius: 12px; 
+        margin-top: 20px;
+    }
+    .content-V-one {
+        width:80%;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1%;
+    }
+
+    .ticket-one{
+        padding-top: 15%;
+    }
+    .button-sell{
+        margin-top: 50px;
+    }
+    .banda-one-video iframe{
+        width:300px;
+        height:200px;
+
+    }
+    .content-F{
+        min-height: 20vh;
+         
+    }
+    .cadastro-div{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .button-cdt{
+        width:80%;
+    }
+    .cadastro-P{
+        padding-top: 45%;
+    }
+    input{
+        width: 15rem;
+    }
+    .cadastro-geral button{
+        width:250px;     
+    }
+    #final-div{
+        padding-top: 30%;
+    }
+    .youtube-one{
+        margin-top: 5%;
+    }
+
+}
+@media only screen and (min-width: 281px) and (max-width:380px){
+    #Page-01{
+        padding-top: 25%;
+    }
+    .menu{
+        background:rgba(0, 0, 0, 0.164);
+        display: flex;
+        justify-content:center;  
+    }
+    .login{
+        margin-left: 0%;
+    }
+   
+    .logo{
+        color:var(--white-color);
+        font-size: 30px;
+    }
+
+    .content{
+        min-height: 100vh;  /*tamanho*/
+        min-width: 0vh;
+    }
+    
+    .grid{
+        display:inline;
+        text-align: center;
+    }
+    .grid-img img{
+        width: 10rem;
+        height:15rem;
+        border-radius: 12px; 
+        margin-top: 20px;
+    }
+    .content-V-one {
+        width:80%;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1%;
+    }
+
+    .ticket-one{
+        padding-top: 10%;
+    }
+    .button-sell{
+        margin-top: 50px;
+    }
+    .banda-one-video iframe{
+        width:300px;
+        height:200px;
+
+    }
+    .content-F{
+        min-height: 20vh;
+         
+    }
+    .cadastro-div{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .button-cdt{
+        width:80%;
+    }
+    .cadastro-P{
+        padding-top: 20%;
+    }
+    input{
+        width: 15rem;
+    }
+    .cadastro-geral button{
+        width:250px;     
+    }
+    #final-div{
+        padding-top: 30%;
+    }
+    .youtube-one{
+        margin-top: 5%;
+    }
+}
+@media only screen and (min-width: 381px) and (max-width:480px){
+    #Page-01{
+        padding-top: 10%;
+    }
+    .menu{
+        background:rgba(0, 0, 0, 0.164);
+        display: flex;
+        justify-content:center;  
+    }
+    .login{
+        margin-left: 0%;
+    }
+   
+    .logo{
+        color:var(--white-color);
+        font-size: 30px;
+    }
+
+    .content{
+        min-height: 100vh;  /*tamanho*/
+        min-width: 0vh;
+    }
+    
+    .grid{
+        display:inline;
+        text-align: center;
+    }
+    .grid-img img{
+        width: 10rem;
+        height:15rem;
+        border-radius: 12px; 
+        margin-top: 20px;
+    }
+    .content-V-one {
+        width:80%;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1%;
+    }
+
+    .ticket-one{
+        padding-top: 10%;
+    }
+    .button-sell{
+        margin-top: 50px;
+    }
+    .banda-one-video iframe{
+        width:300px;
+        height:200px;
+
+    }
+    .div-res-one{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .content-F{
+        min-height: 20vh;
+    }
+    .cadastro-div{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .button-cdt{
+        width:80%;
+    }
+    .cadastro-P{
+        padding-top: 30%;
+    }
+    input{
+        width: 15rem;
+    }
+    .cadastro-geral button{
+        width:250px;     
+    }
+    #final-div{
+        padding-top: 30%;
+        padding-bottom: 30%;
+        min-height:30rem;
+
+    }
+    .youtube-one{
+        margin-top: 5%;
+    }
+}
+@media only screen and (min-width: 481px) and (max-width:580px){
+    #Page-01{
+        padding-top: 10%;
+    }
+    .menu{
+        background:rgba(0, 0, 0, 0.164);
+        display: flex;
+        justify-content:center;  
+    }
+    .login{
+        margin-left: 0%;
+    }
+   
+    .logo{
+        color:var(--white-color);
+        font-size: 30px;
+    }
+
+    .content{
+        min-height: 100vh;  /*tamanho*/
+        min-width: 0vh;
+    }
+    
+    .grid{
+        display:inline;
+        text-align: center;
+    }
+    .grid-img img{
+        width: 10rem;
+        height:15rem;
+        border-radius: 12px; 
+        margin-top: 20px;
+    }
+    .content-V-one {
+        width:80%;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1%;
+    }
+
+    .ticket-one{
+        padding-top: 10%;
+    }
+    .button-sell{
+        margin-top: 50px;
+    }
+    .banda-one-video iframe{
+        width:430px;
+        height:300px;
+    }
+    .div-res-one{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .content-F{
+        min-height: 20vh;
+    }
+    .cadastro-div{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .button-cdt{
+        width:80%;
+    }
+    .cadastro-P{
+        padding-top: 30%;
+    }
+    input{
+        width: 15rem;
+    }
+    .cadastro-geral button{
+        width:250px;     
+    }
+    #final-div{
+        padding-top: 30%;
+        padding-bottom: 30%;
+        min-height:30rem;
+
+    }
+    .youtube-one{
+        margin-top: 5%;
+    }
+}
+@media only screen and (min-width: 581px) and (max-width:780px){
+    #Page-01{
+        padding-top: 10%;
+    }
+    .menu{
+        background:rgba(0, 0, 0, 0.164);
+        display: flex;
+        justify-content:center;  
+    }
+    .login{
+        margin-left: 0%;
+    }
+   
+    .logo{
+        color:var(--white-color);
+        font-size: 30px;
+    }
+
+    .content{
+        min-height: 100vh;  /*tamanho*/
+        min-width: 0vh;
+    }
+    
+    .grid{
+        text-align: center;
+        height: 23rem;
+        padding-top: 5%;
+    }
+    .grid-img img{
+        width: 10rem;
+        height:15rem;
+        margin-top: 20px;
+    }
+    .content-V-one {
+        grid-template-columns: 1fr ;
+        width: 40rem;
+        row-gap:5%;
+    }
+
+    .ticket-one{
+        padding-top: 10%;
+    }
+    .button-sell{
+        margin-top: 50px;
+    }
+    .banda-one-video iframe{
+        width:650px;
+        height:400px;
+    }
+    .div-res-one{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .content-F{
+        min-height: 20vh;
+    }
+    .cadastro-div{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+    .button-cdt{
+        width:80%;
+    }
+    .cadastro-P{
+        padding-top: 30%;
+    }
+    input{
+        width: 15rem;
+    }
+    .cadastro-geral button{
+        width:250px;     
+    }
+    #final-div{
+        padding-top: 30%;
+        padding-bottom: 30%;
+        min-height:30rem;
+
+    }
+    .youtube-one{
+        margin-top: 15%;
+    }
+}
+@media only screen and (min-width: 781px) and (max-width:1080px){
+    #Page-01{
+        padding-top: 10%;
+    }
+    .menu{
+        background:rgba(0, 0, 0, 0.164);
+        display: flex;
+        justify-content:center;  
+    }
+    .login{
+        margin-left: 0%;
+    }
+   
+    .logo{
+        color:var(--white-color);
+        font-size: 30px;
+    }
+
+    .content{
+        min-height: 100vh;  /*tamanho*/
+        min-width: 0vh;
+    }
+    
+    .grid{
+        text-align: center;
+        height: 23rem;
+        padding-top: 5%;
+    }
+    .grid-img img{
+        width: 13rem;
+        height:18rem;
+        margin-top: 10px;
+    }
+    .content-V-one {
+        grid-template-columns: 1fr 1fr 1fr ;
+        width: 50rem;
+    }
+
+    .ticket-one{
+        padding-top: 10%;
+    }
+    .button-sell{
+        margin-top: 50px;
+    }
+    .banda-one-video iframe{
+        width:650px;
+        height:400px;
+    }
+    .div-res-one{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .content-F{
+        min-height: 20vh;
+    }
+    .cadastro-div{
+        padding-top: 5%;
+        padding-bottom: 18%;
+    }
+    .button-cdt{
+        width:80%;
+    }
+    .cadastro-P{
+        padding-top: 10%;
+    }
+    input{
+        width: 15rem;
+    }
+    .cadastro-geral button{
+        width:250px;     
+    }
+    #final-div{
+        padding-top: 5%;
+        padding-bottom: 8%;
+        min-height:30rem;
+
+    }
+    .youtube-one{
+        margin-top: 2%;
+    }
+}
+@media only screen and (min-width: 1081px) and (max-width:1200px){
+    #Page-01{
+        padding-top: 10%;
+    }
+    .menu{
+        background:rgba(0, 0, 0, 0.164);
+        display: flex;
+        justify-content:center;  
+    }
+    .login{
+        margin-left: 0%;
+    }
+   
+    .logo{
+        color:var(--white-color);
+        font-size: 30px;
+    }
+
+    .content{
+        min-height: 100vh;  /*tamanho*/
+        min-width: 0vh;
+    }
+    
+    .grid{
+        text-align: center;
+        height: 23rem;
+        padding-top: 5%;
+    }
+    .grid-img img{
+        width: 15rem;
+        height:18rem;
+        margin-top: 10px;
+    }
+    .content-V-one {
+        grid-template-columns: 1fr 1fr 1fr ;
+        width: 50rem;
+    }
+
+    .ticket-one{
+        padding-top: 10%;
+    }
+    .button-sell{
+        margin-top: 50px;
+    }
+    .banda-one-video iframe{
+        width:650px;
+        height:400px;
+    }
+    .div-res-one{
+        padding-top: 20%;
+        padding-bottom: 20%;
+    }
+
+    .content-F{
+        min-height: 20vh;
+    }
+    .cadastro-div{
+        padding-top: 5%;
+        padding-bottom: 18%;
+    }
+    .button-cdt{
+        width:80%;
+    }
+    .cadastro-P{
+        padding-top: 10%;
+    }
+    input{
+        width: 15rem;
+    }
+    .cadastro-geral button{
+        width:250px;     
+    }
+    #final-div{
+        padding-top: 5%;
+        padding-bottom: 10%;
+        min-height:30rem;
+
+    }
+    .youtube-one{
+        margin-top: 2%;
+    }
+}
+@media only screen and (min-width: 1400px) and (max-width:2000px){
+    p{
+        font-size: 2rem;
+    }
+    #Page-01{
+        padding-top: 10%;
+    }
+    .menu{
+        background:rgba(0, 0, 0, 0.164);
+        display: flex;
+        justify-content:center;  
+    }
+    .login{
+        margin-left: 0%;
+    }
+   
+    .logo{
+        color:var(--white-color);
+        font-size: 30px;
+    }
+
+    .content{
+        min-height: 100vh;  /*tamanho*/
+        min-width: 0vh;
+    }
+    
+    .grid{
+        text-align: center;
+        height: 35rem;
+        padding-top: 5%;
+    }
+    .grid-img img{
+        width: 19rem;
+        height:28rem;
+        margin-top: 10px;
+    }
+    .content-V-one {
+        grid-template-columns: 1fr 1fr 1fr ;
+        width: 50rem;
+    }
+
+    .ticket-one{
+        padding-top: 10%;
+    }
+    .button-sell{
+        margin-top: 50px;
+    }
+    .banda-one-video iframe{
+        width:800px;
+        height:400px;
+    }
+    .div-res-one{
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+
+    .content-F{
+        min-height: 20vh;
+    }
+    .cadastro-div{
+        padding-top: 5%;
+        padding-bottom: 18%;
+    }
+    .button-cdt{
+        width:80%;
+    }
+    .cadastro-P{
+        padding-top: 10%;
+    }
+    input{
+        width: 15rem;
+    }
+    .cadastro-geral button{
+        width:250px;     
+    }
+    #final-div{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        min-height:30rem;
+
+    }
+    .youtube-one{
+        margin-top: 2%;
+    }
+}
+@media only screen and (min-width: 2001px) and (max-width:4000px){
+    p{
+        font-size: 3rem;
+    }
+  
+    #Page-01{
+        padding-top: 10%;
+    }
+    .menu{
+        background:rgba(0, 0, 0, 0.164);
+        display: flex;
+        justify-content:center;  
+    }
+    .login{
+        margin-left: 0%;
+    }
+   
+    .logo{
+        color:var(--white-color);
+        font-size: 50px;
+    }
+
+    .content{
+        min-height: 100vh;  /*tamanho*/
+        min-width: 0vh;
+    }
+    
+    .grid{
+        text-align: center;
+        height: 50rem;
+        padding-top: 5%;
+    }
+    .grid-img img{
+        width: 35rem;
+        height:45rem;
+        margin-top: 10px;
+    }
+    .content-V-one {
+        grid-template-columns: 1fr 1fr 1fr ;
+        width: 100rem;
+    }
+    .ticket-one{
+        padding-top: 10%;
+        font-size: 30px;
+    }
+    .ticket-one h3{
+        padding-top: 10%;
+        font-size: 60px;
+    }
+    select{
+        font-size: 30px;
+    }
+
+    .button-sell{
+        margin-top: 50px;
+        height: 10rem;
+        font-size: 30px;
+
+    }
+    .button-sell button{
+        margin-top: 50px;
+        height: 10rem;
+    }
+ 
+    .banda-one-video iframe{
+        width:800px;
+        height:400px;
+    }
+    .div-res-one{
+        padding-top: 5%;
+        padding-bottom: 10%;
+    }
+    .div-res-one h1{
+        font-size: 60px;
+    }
+    .div-res-one p{
+        font-size: 30px;
+    }
+
+
+    .content-F{
+        min-height: 20vh;
+    }
+    .cadastro-div{
+        padding-top: 5%;
+        padding-bottom: 18%;
+    }
+    .button-cdt{
+        width:60%;
+        height: 100px;
+        font-size: 30px;
+    }
+
+    .cadastro-P{
+        padding-top: 20%;
+    }
+    .cadastro-div h2{
+        font-size: 40px;
+    }
+    input{
+        width: 40rem;
+        font-size: 20px;
+
+    }
+    .cadastro-geral button{
+        width:250px;     
+    }
+   
+    #final-div{
+        padding-top: 30%;
+        padding-bottom: 10%;
+        min-height:30rem;
+
+    }
+    .youtube-one{
+        margin-top: 2%;
+    }
+}
+
+
+
+
+
