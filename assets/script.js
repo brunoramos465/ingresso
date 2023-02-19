@@ -72,6 +72,12 @@ function bandaONE(){
         PageOne.style.display = "none";
         onehidden.style.display = 'inline';   
     })
+   
+     bandaOne.addEventListener("touchstart", function(){
+        this.style.boxShadow = "5px 5px 50px red";
+        PageOne.style.display = "none";
+        onehidden.style.display = 'inline';   
+    })
 
     function arquicancada (){
         let resultOne = 0;
@@ -215,6 +221,11 @@ function bandaTWO(){
         PageOne.style.display = "none";
         twoHidden.style.display = 'inline';  
     })
+     bandaTwo.addEventListener("touchstart", function(){
+        this.style.boxShadow = "5px 5px 50px red";
+        PageOne.style.display = "none";
+        onehidden.style.display = 'inline';   
+    })
 
     function arquicancada (){
         let resultOne = 0;
@@ -355,6 +366,11 @@ function bandaTHREE(){
         PageOne.style.display = "none";
         threeHidden.style.display = 'inline';  
 
+    })
+     bandaThree.addEventListener("touchstart", function(){
+        this.style.boxShadow = "5px 5px 50px red";
+        PageOne.style.display = "none";
+        onehidden.style.display = 'inline';   
     })
 
     function arquicancada (){
