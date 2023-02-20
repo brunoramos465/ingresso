@@ -224,7 +224,7 @@ function bandaTWO(){
      bandaTwo.addEventListener("touchstart", function(){
         this.style.boxShadow = "5px 5px 50px red";
         PageOne.style.display = "none";
-        onehidden.style.display = 'inline';   
+        twoHidden.style.display = 'inline';  
     })
 
     function arquicancada (){
@@ -370,7 +370,7 @@ function bandaTHREE(){
      bandaThree.addEventListener("touchstart", function(){
         this.style.boxShadow = "5px 5px 50px red";
         PageOne.style.display = "none";
-        onehidden.style.display = 'inline';   
+        threeHidden.style.display = 'inline';  
     })
 
     function arquicancada (){
