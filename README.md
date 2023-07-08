@@ -1,4 +1,4 @@
-Projeto desenvolvido em Javascript, css e html basico.  
+Projeto desenvolvido em Javascript, CSS e HTML básico.  
 
 https://ingressonews.netlify.app
 
